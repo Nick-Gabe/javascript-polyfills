@@ -1,0 +1,26 @@
+{
+  "name": "javascript-polyfills",
+  "version": "1.0.0",
+  "description": "Repository trying to recreate Javascript (node) methods.",
+  "main": "",
+  "scripts": {
+    "time": "node test/compareElapsedTime.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-Gabe/javascript-polyfills.git"
+  },
+  "keywords": [
+    "javascript",
+    "polyfills",
+    "js",
+    "node",
+    "browser"
+  ],
+  "author": "Nícolas Gabriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nick-Gabe/javascript-polyfills/issues"
+  },
+  "homepage": "https://github.com/Nick-Gabe/javascript-polyfills#readme"
+}
