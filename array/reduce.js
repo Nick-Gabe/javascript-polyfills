@@ -1,8 +1,9 @@
 Array.prototype.reduce = function (callback, initialValue) {
     if(typeof callback !== 'function') throw Error(`TypeError: ${callback} is not a function`)
-    let accumulator = initialValue === undefined ? this[0] : initialValue;
+    const initalIsUndefined = initialValue === undefined;
+    let accumulator = initalIsUndefined ? this[0] : initialValue;
 
-    for (let index = initialValue ? 0 : 1; index < this.length; index++) {
+    for (let index = initalIsUndefined ? 1 : 0; index < this.length; index++) {
         if (this[index] === undefined) continue
         accumulator = callback(accumulator, this[index], index, this)
     }
