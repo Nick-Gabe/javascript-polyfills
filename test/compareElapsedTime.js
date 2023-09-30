@@ -27,6 +27,7 @@ function getElapsedTime(code, iterations = 5000, output = 'average') {
 }
 
 const file = process.argv[2];
+if(!file) return console.error('❌ Missing file to compare, ex: array/at')
 const test = require(`./${file}`);
 
 // shows what function was executed
